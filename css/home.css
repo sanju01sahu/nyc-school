@@ -12,12 +12,12 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-bottom: 3%;
+    padding-bottom: 6%;
     padding-top: 20px;
     margin-bottom: 8%;
 }
 .home-banner-sub-sec-1>h1{
-    font-size: 3rem;
+    font-size: 4rem;
     color: black;
 }
 .home-banner-sub-sec-1>h1>span{
@@ -34,8 +34,8 @@ body{
     border: none;
 }
 .home-banner-sub-sec-2>img{
-    width: 400px;
-    height: 350px;
+    width: 650px;
+    height: 380px;
     border-radius: 10px;
     display: block;
 }
@@ -136,7 +136,8 @@ hr{
 }
 #home-career-sec{
     background-color: #e9f4f8;
-    margin-bottom: 7%;
+    /* margin-bottom: 7%; */
+    padding-bottom: 7%;
 }
 #home-career-sec>h1{
     text-align: center;
@@ -180,3 +181,78 @@ hr{
     background-color: #71bdd5;
     border: none;
 }
+.home-career-program-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    gap: 40px;
+}
+.home-career-program-sec>div>h1{
+  margin: 10px;
+}
+.home-career-program-sec>div>p{
+  margin: 10px;
+}
+.home-faculty-sec{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+.home-faculty-sec>div:nth-child(1){
+    margin-left: 5px;
+}
+.home-faculty-sec>div:nth-child(1)>h2{
+    font-weight: lighter;
+}
+.home-faculty-sec>div:nth-child(1)>p{
+   margin-right: 30px;
+}
+.home-faculty-sec>div:nth-child(2)>img{
+   padding: 30px;
+}
+#home-feedback{
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    /* border: 1px solid black; */
+}
+#home-feedback>h1{
+    text-align: center;
+    margin-bottom: 2%;
+}
+.home-feedback-sec{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    /* border: 1px solid red; */
+}
+.home-feedback-sub-sec-1{
+    width: 25%;
+    background-color: #e9f4f8;
+    border: 1px solid #71bdd5;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    /* border: 4px solid red; */
+}
+.home-feedback-sub-sec-1>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.home-feedback-sub-sec-1>div:nth-child(1)>div:nth-child(2)>p{
+   margin-left: 10px;
+}
+
+
