@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .innerbanner>img{
+        width:100%;
+    }
+    .row {
+     width: 70%;
+        margin: auto;
+       
+    }
+    .row>h1{
+        background-color: blueviolet;
+        color: white;
+        width: 50%;
+    }
+
+    .container {
+        
+        margin: auto;
+       
+    }
+
+    .enquiryfeedback {
+       font-size: 20px;
+        width: 50%;
+        width: 100%;
+    }
+    .contactus-text{
+        font-size: 20px;
+        width: 50%;
+        width: 100%;
+    }
+    .flex{
+        display: flex;
+      
+    }
+    .form-horizontal{
+        width: 700%;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="innerbanner">
+            <img src="https://www.citytech.cuny.edu/images/new_building.jpg">
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <h1>Contact Us</h1>
+                <div class="flex">
+                <div class="enquiryfeedback">
+                    <h3>
+                        Enquiry &amp; Feedback
+
+                    </h3>
+                    <form action="/Contact" class="form-horizontal" method="post">
+                        <div class="text-center">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Name: <strong
+                                    class="formRequired">*</strong></label>
+                            <div class="col-sm-8">
+
+                                <input class="form-control" id="DB_name" name="DB_name" required="required" type="text"
+                                    value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Email: <strong
+                                    class="formRequired">*</strong></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="DB_email" name="DB_email" required="required"
+                                    type="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Message: <strong
+                                    class="formRequired">*</strong></label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" cols="20" id="DB_inquirymessage" name="DB_inquirymessage"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="mobile">Mobile No: <strong
+                                    class="formRequired">*</strong></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" data-val="true"
+                                    data-val-number="The field DB_mobile must be a number." id="DB_mobile"
+                                    name="DB_mobile" required="required" type="number" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" name="form[submit]" id="submit"
+                                class="rsform-submit-button">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contactus-text">
+
+                    <div class="custom">
+                        <h4>Principal</h4>
+                        <p>NYC College<br> Nainital - 263002 Uttarakhand, INDIA</p>
+                        <h4>Front Office</h4>
+                        <p>Phones : + 91-5942-236361 ,<br> Fax : +91-5942-239502<br> Email : <span
+                                id="cloak992921cc0f5aee1a48b96443daedc71b"><a
+                                    href="mailto:contact@sherwood.edu.in">contact@sherwood.edu.in</a></span></p>
+                        <h4>Horsman Wing</h4>
+                        <p>Phones : +91-7579438392 / +91-9411132312<br> Email : <span
+                                id="cloak3a6d90b82f65ac4978d5c5f33d21fef9"><a
+                                    href="mailto:headmistress@sherwood.edu.in">headmistress@sherwood.edu.in</a></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span
+                                id="cloak597069bb8b9362ac2b304143f3a4d928"><a
+                                    href="mailto:horsmanwing@sherwood.edu.in">horsmanwing@sherwood.edu.in</a></span>
+                        </p>
+                        <h4>Accounts Office</h4>
+                        <p>Phone : +91-5942-239710<br> Email : <span id="cloak0f99e6f0078df9afba7a38f368cf9a8e"><a
+                                    href="mailto:accounts@sherwood.edu.in">accounts@sherwood.edu.in</a></span></p>
+                        <h4>Dispatch Office :</h4>
+                        <p>Phone : +91-5942-239711<br> Email : <span id="cloak9adb3b3c28c10f137fe6420d7f67e41b"><a
+                                    href="mailto:dispatch@sherwood.edu.in">dispatch@sherwood.edu.in</a></span><br>
+                            Senior Master's phone : +91-5942-235404</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13906.354278435228!2d79.4544909!3d29.3823337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ada25a1fbcd1516!2sSherwood+College!5e0!3m2!1sen!2sin!4v1548528213885"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
