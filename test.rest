@@ -1,0 +1,14 @@
+GET https://mock-api-courses.onrender.com/users
+
+###
+
+POST https://mock-api-courses.onrender.com/users
+Content-Type: application/json
+
+{
+    "course": "Basics of Frontend Development-Part2",
+    "image": "https://lwfiles.mycourse.app/masai-school-public/05e6a2b6b1eb2963a86991eec0387021.jpeg",
+    "description": "The course attempts to go deeper into the concepts introduced in Part 1 of the series. In this part, you will learn about some of the advanced concepts of modern Javascript which includes Higher Order functions, Asynchronous Programming, Promises, Fetch, etc.",
+    "duration": "2-months",
+    "price": 8000
+}

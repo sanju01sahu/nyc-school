@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <link rel="stylesheet" href="/css/courses.css">
+</head>
+<body>
+    
+
+    <header class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search" />
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" class="menu-icon"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="content">
+            <div class="logo">
+              <a href="#"><img src="/src/FINAL LOGO.png" alt="LOGO" /></a>
+            </div>
+            <ul class="links">
+              <li><a href="/pages/home.html">Home</a></li>
+              <li><a href="/pages/admission.html">ADMISSIONS</a></li>
+              <li>
+                <a href="/pages/Teacher.html">TEACHERS</a>
+              </li>
+              <li>
+                <a href="#">Courses</a>
+              </li>
+              <li>
+                <a href="#home-about-sec" class="smooth-scroll">ABOUT</a>
+              </li>
+              <li><a href="#home-news-sec" class="smooth-scroll">NEWS</a></li>
+              <li><a href="/pages/contact-us.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h1>Courses</h1>
+          </div>
+        </div>       
+      </div>
+
+      <div id="functionality">
+
+        <div>
+      <h4>Sort Based On Price</h4>
+        <button id="Default">Default</button>
+        <button id="sort-low-to-high" class="u-full-width button button-primary">
+          Sort Low To High
+        </button>
+        <button id="sort-high-to-low" class="u-full-width button button-primary">
+          Sort High To Low
+        </button>
+        </div>
+        
+        <div>
+      <form>
+        <input placeholder="Search Course" type="text" id="search">
+        <input type="submit" value="Search">
+    </form>
+      </div>
+
+      </div>
+
+  
+        <div class="row">
+          <div class="columns twelve main">
+            <div class="notifications-wrapper" id="notifications-wrapper"></div>
+            <div class="data-list-wrapper" id="data-list-wrapper"></div>
+            <div class="pagination-wrapper" id="pagination-wrapper"></div>
+          </div>
+        </div>
+        
+      </div>
+
+
+   
+</body>
+
+<script src="/script/courses.js"></script>
+
+</html>
