@@ -86,7 +86,7 @@ nav .content .links{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
         background-color: blueviolet;
         color: white;
-        width: 50%;
+        width: 48.6%;
        
     }
 
@@ -96,7 +96,7 @@ nav .content .links{
         padding-left:30px;
        font-size: 30px;
         width: 70%;
-       padding-top: 40px;
+       padding-top: 20px;
         margin-right: 20px;
         justify-content: space-between;
     }
@@ -119,6 +119,8 @@ nav .content .links{
     #submit{
         background-color: green;
         color: white;
+       
+       margin-bottom: 20px;
     }
     .form-group{
         width: 50%;
@@ -132,7 +134,16 @@ nav .content .links{
     }
     .contactus-text{
       padding-top: 40px;
+      margin-top: 40px;
     }
+
+    .row>h1{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+      background-color: blueviolet;
+      color: white;
+      width: 70%;
+     
+  }
     }
 
 
