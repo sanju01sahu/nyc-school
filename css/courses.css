@@ -306,7 +306,8 @@ nav .content .links{
 }
 
 #functionality>div:nth-child(1)>button{
-    background-color: #33caf0c6;
+    background-color: #3470e4;
+    color: white;
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -314,12 +315,32 @@ nav .content .links{
     margin-right: 15px;
 }
 
+#functionality>div:nth-child(1)>button:hover{
+  cursor: pointer;
+  transform: scale(1.1);  
+}
+
 input[type="submit"]{
-    background-color: #33caf0c6;
+    background-color: #3470e4;
+    color: white;
     padding: 5px;
     margin-top: 4px;
     border-radius: 5px;
     border: none;
+    margin-left: 3px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#search-form{
+  width: 30%;
+  /* border: 1px solid red; */
+}
+#search{
+  width: 70%;
 }
 
 .card__body>h2{
@@ -342,6 +363,26 @@ input[type="submit"]{
     width: 78%;
     margin: auto;
     margin-bottom: 7%;
+}
+
+.card-sec{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.card-sec>button{
+  background-color: #3470e4;
+  color: white;
+  padding: 5px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.card-sec>button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* Media Query */
