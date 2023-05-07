@@ -39,7 +39,8 @@
      title.textContent = element.title;
 
      teacher.append(image, name, title);
-     container.append(teacher);
+    innercont.append(teacher)
+    container.append(innercont);
 
      teacher.addEventListener("click", () => {
        localStorage.setItem("teachers", JSON.stringify(element));
@@ -49,7 +50,7 @@
  }
 
  // ---------Search------------
-
+let searchdiv=document.getElementById("search")
  let searchInput = document.getElementById("searchinput");
  let searchButton = document.getElementById("searchbutton");
 
