@@ -1,7 +1,9 @@
 
 
 let mainSection = document.getElementById("data-list-wrapper");
-let paginationWrapper = document.getElementById("pagination-wrapper")
+let paginationWrapper = document.getElementById("pagination-wrapper");
+
+let lsData = JSON.parse(localStorage.getItem("user")) || [];
 
 window.addEventListener("load",()=>{
   fetchAndRenderUsers(1)
@@ -49,7 +51,7 @@ function getCardList(data){
       item.course,
       item.description,
       item.duration,
-      item.price
+      // item.price
     )
 
     cardList.append(card);
@@ -63,7 +65,7 @@ function getCardList(data){
 
 
 
-function getCard(userId,imageUrl,course,description,duration,price){
+function getCard(userId,imageUrl,course,description,duration){
 
   const card = document.createElement("div");
   card.setAttribute("class","card")
@@ -95,12 +97,41 @@ function getCard(userId,imageUrl,course,description,duration,price){
   cardDuration.classList.add("card-duration");
   cardDuration.innerText = `Course Duration : ${duration}`;
 
+  const cardSec = document.createElement("div");
+  cardSec.classList.add("card-sec");
+
   const cardPrice = document.createElement("h3")
   cardPrice.classList.add("card-price");
-  cardPrice.innerText = `₹ ${price}`;
+  cardPrice.innerText = `₹  Free`;
+
+  const cardEnroll = document.createElement("button");
+  cardEnroll.classList.add("card-enroll");
+  cardEnroll.innerText = "ENROLL"
+  
+  cardEnroll.addEventListener("click", (e) => {
+    e.preventDefault();
+
+   const cardData = {
+      id: userId,
+      image: imageUrl,
+      course: course,
+      description: description,
+      duration: duration,
+    };
+
+  lsData.push(cardData);
+  localStorage.setItem("user", JSON.stringify(lsData));
+
+  alert(`🎉 You have successfully enrolled into the course! 🎉`);
+  setTimeout(() => {
+    window.location.href = "/pages/home.html";
+  }, 2000);
+  });
 
 
-  cardBody.append(cardTitle,cardDesc,cardDuration,cardPrice);
+  cardSec.append(cardPrice,cardEnroll);
+
+  cardBody.append(cardTitle,cardDesc,cardDuration,cardSec);
   card.append(cardImg,cardBody);
 
 
@@ -126,6 +157,10 @@ function getAsBtn(pageNumber){
 }
 
 
+
+
+
+
 let Default = document.getElementById("Default");
 let sortAtoZBtn = document.getElementById("sort-low-to-high");
 let sortZtoABtn = document.getElementById("sort-high-to-low");
@@ -136,7 +171,7 @@ Default.addEventListener("click",()=>{
 
 
 sortAtoZBtn.addEventListener("click",()=>{
-    fetch(`https://mock-api-courses.onrender.com/users?_sort=price&_order=asc&_limit=5`)
+    fetch(`https://mock-api-courses.onrender.com/users?_sort=duration&_order=asc&_limit=5`)
     .then((res)=>res.json())
     .then((data)=>{
       
@@ -153,7 +188,7 @@ sortAtoZBtn.addEventListener("click",()=>{
   
   
   sortZtoABtn.addEventListener("click",()=>{
-    fetch(`https://mock-api-courses.onrender.com/users?_sort=price&_order=desc&_limit=5`)
+    fetch(`https://mock-api-courses.onrender.com/users?_sort=duration&_order=desc&_limit=5`)
     .then((res)=>res.json())
     .then((data)=>{
       

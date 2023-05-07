@@ -10,8 +10,9 @@ html{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-}
-body{
+  }
+  body{
+    
     box-sizing: border-box;
 }
 
@@ -92,6 +93,7 @@ nav .content .links{
     padding-bottom: 3%;
     margin-bottom: 8%;
     /* border:  1px solid black; */
+    /* padding-right: 60px; */
     z-index: -1;
 }
 .home-banner-sub-sec-1>h1{
@@ -233,9 +235,12 @@ hr{
 }
 
 #home-career-sec{
+    width: 100%;
     background-color: #e9f4f8;
     /* margin-bottom: 7%; */
     padding-bottom: 7%;
+    /* margin-right: -48px; */
+
 }
 #home-career-sec>h1{
     text-align: center;
@@ -362,6 +367,9 @@ hr{
 
 /* -------------header start------------- */
 @media screen and (max-width: 1250px){
+  .wrapper{
+    padding: 0px 30px;
+  }
     .wrapper nav{
       max-width: 100%;
       padding: 0 20px;
@@ -370,9 +378,12 @@ hr{
       margin-left: 30px;
     }
     .content .links li a{
-      padding: 8px 13px;
+      padding: 9px 5px;
     }
-    
+
+    #home-banner-sec{
+       padding: 0px 30px;
+  }
   }
   
   @media screen and (max-width: 750px){
@@ -420,6 +431,8 @@ hr{
     .content .logo a{
       font-size: 27px;
     }
+
+ 
   }
 
 /* -----------header end------------*/
@@ -428,13 +441,17 @@ hr{
 
 /* ----------------home start------------*/
   @media screen and (max-width: 1180px) {
-
+ 
     #home-banner-sec{
+        width: 100%;
         display: block;
         position: relative;
-        /* margin-top: -20%; */
+        margin-top: -20%;
         z-index: -1;
     }
+
+  
+
 
     .home-banner-sub-sec-2>img{
         width: 650px;
@@ -449,6 +466,7 @@ hr{
     #home-news-sec{
         display: flex;
         flex-direction: column;
+        padding: 0px 30px;
     }
 
     #mid-home-sec{
@@ -462,6 +480,11 @@ hr{
     #home-about-sec{
         display: flex;
         flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    #home-career-sec{
+      padding: 0px 30px;
     }
 
     .home-feedback-sec{
@@ -495,6 +518,9 @@ hr{
   }
 
 
+ 
+
+
 /* -------About-Sec-start------- */
   @media screen and (max-width: 1083px) {
     
@@ -503,6 +529,7 @@ hr{
         position: relative;
         margin-top: -20%;
         z-index: -1;
+        padding-right: 30px;
     }
 
    #home-about-sec{
@@ -522,6 +549,7 @@ hr{
         position: relative;
         margin-top: -20%;
         z-index: -1;
+        padding-right: 30px;
     }
 
    .home-banner-sub-sec-2>img{
@@ -546,12 +574,13 @@ hr{
 
 
 
-  @media screen and (max-width: 570px) {
+  @media screen and (min-width: 380px) and (max-width: 570px) {
     #home-banner-sec{
         display: block;
         position: relative;
         margin-top: -20%;
         z-index: -1;
+        padding-right: 30px;
     }
 
     #mid-home-sec{
