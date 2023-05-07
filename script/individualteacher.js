@@ -17,16 +17,16 @@
     let teacher=document.createElement("div")
     
     let name=document.createElement("h2")
-    name.textContent=element.name;
+    name.textContent=`Name: ${element.name}`;
     
     let image=document.createElement("img")
     image.setAttribute("src", element.avatar)
     
     let title=document.createElement("h5")
-    title.textContent=element.title;
+    title.textContent=`Specialism: ${element.title}`;
     
     let discription=document.createElement("p")
-    discription.textContent=element.description
+    discription.textContent=`Area Of Responsibilities: ${element.description}`
 
 
     container.append(teacher)

@@ -5,10 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="/css/teacher.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
   </head>
   <body>
-    <input type="text" id="searchinput" placeholder="Enter title" />
+
+
+
+    <header class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="content">
+          <div class="logo">
+            <a href="#"><img src="/src/FINAL LOGO.png" alt="LOGO" /></a>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ADMISSIONS</a></li>
+            <li>
+              <a href="#">TEACHERS</a>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <input type="text" id="searchinput" placeholder="Enter Name" />
     <button id="searchbutton">Search</button>
 
 <h1><u>TEACHERS</u></h1>
@@ -43,5 +83,5 @@
 <button>Subscribe</button>
     </div>
   </body>
-  <script src="teacher.js"></script>
+  <script src="/script/teacher.js"></script>
 </html>
