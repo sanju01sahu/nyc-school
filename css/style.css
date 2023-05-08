@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,13 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
 .wrapper {
   background: #71bdd5;
   position: relative;
   width: 100%;
 }
+
 .wrapper nav {
   position: relative;
   display: flex;
@@ -20,10 +23,12 @@
   align-items: center;
   justify-content: space-around;
 }
+
 nav .content {
   display: flex;
   align-items: center;
 }
+
 nav .content .links {
   margin-left: 200px;
   display: flex;
@@ -33,6 +38,7 @@ nav .content .links {
   list-style: none;
   line-height: 70px;
 }
+
 .content .links li a {
   color: #000000;
   font-size: 15px;
@@ -41,6 +47,7 @@ nav .content .links {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .content .links li a:hover {
   text-decoration: underline;
   text-decoration-color: white;
@@ -56,6 +63,7 @@ nav .content .links {
   width: 70px;
   text-align: center;
 }
+
 .wrapper .menu-icon {
   display: none;
 }
@@ -70,9 +78,11 @@ nav .content .links {
     max-width: 100%;
     padding: 0 20px;
   }
+
   nav .content .links {
     margin-left: 30px;
   }
+
   .content .links li a {
     padding: 8px 13px;
   }
@@ -82,9 +92,11 @@ nav .content .links {
   .wrapper .menu-icon {
     display: block;
   }
-  .wrapper #show-menu:checked ~ .menu-icon i::before {
+
+  .wrapper #show-menu:checked~.menu-icon i::before {
     content: "\f00d";
   }
+
   nav .content .links {
     display: block;
     position: fixed;
@@ -99,12 +111,15 @@ nav .content .links {
     padding-bottom: 100px;
     transition: all 0.3s ease;
   }
-  nav #show-menu:checked ~ .content .links {
+
+  nav #show-menu:checked~.content .links {
     left: 0%;
   }
+
   .content .links li {
     margin: 15px 20px;
   }
+
   .content .links li a,
   .content .links li label {
     line-height: 40px;
@@ -114,6 +129,7 @@ nav .content .links {
     cursor: pointer;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .main {
     display: none;
@@ -124,10 +140,12 @@ nav .content .links {
   .wrapper nav {
     padding: 0 10px;
   }
+
   .content .logo a {
     font-size: 27px;
   }
 }
+
 /* header end */
 
 
@@ -138,15 +156,18 @@ nav .content .links {
   width: 100%;
   background-color: #71bdd5;
 }
+
 .main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 50px;
 }
+
 .footer-header {
   padding: 10px;
 }
+
 .office-des {
   padding: 10px;
 }
@@ -156,6 +177,7 @@ nav .content .links {
   grid-template-columns: auto;
   align-items: center;
 }
+
 .link-des a {
   color: #000000;
   text-decoration: none;
@@ -163,9 +185,11 @@ nav .content .links {
   font-size: 16px;
   font-weight: 600;
 }
+
 .icons {
   margin-top: 30px;
 }
+
 .icons a {
   text-decoration: none;
   color: #fff;
@@ -182,16 +206,19 @@ nav .content .links {
   position: relative;
   top: 2px;
 }
+
 .icons a:hover {
   color: #fff;
   background-color: #fb2576;
   border-color: #fb2576;
 }
+
 @media screen and (max-width: 768px) {
   .main {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px 20px;
   }
+
   .icons {
     flex-wrap: wrap;
     padding: 20px;
@@ -204,4 +231,5 @@ nav .content .links {
     grid-gap: 50px 20px;
   }
 }
+
 /* footer end */

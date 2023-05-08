@@ -2,7 +2,7 @@ body{
     margin: 0%;
 }
 .container001-child{
-    background: linear-gradient(180deg, #71bdd5 50%, white 50%);
+    background: linear-gradient(180deg, #71bdd5 60%, white 40%);
     padding-top: 100px ;
     padding-bottom: 150px;
 }

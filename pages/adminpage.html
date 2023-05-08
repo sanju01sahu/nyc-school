@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/adminpage.css">
+</head>
+
+<body>
+    <section>
+        <div class="AV-main">
+            <div class="AV-leftmain">
+                <div class="AV-nav">
+                    <img src="../images/icon_admin.png" alt="Error">
+                </div>
+                <div class="AV-details">
+                    <button id=""></button>
+                    <button id="AV-orders">
+                        <h2></h2>
+                    </button>
+                    <button id="AV-products">
+                        <h2>Inventory</h2>
+                    </button>
+                    <button id="AV-partners">
+                        <h2>Partners</h2>
+                    </button>
+                    <button id="AV-add">
+                        <h2>Add Products</h2>
+                    </button>
+                    <button id="AV-users">
+                        <h2>Users</h2>
+                    </button>
+                    <!-- <button class="AV-signin"><h2>Sign In</h2></button>
+          <button class="AV-login"><h2>Log In</h2></button> -->
+                    <button>
+                        <h2>Log Out</h2>
+                    </button>
+                </div>
+            </div>
+
+            <div class="AV-rightmain">
+                <div class="AV-dashboard">
+                    <div>
+                        <img src="../images/admin_project.png" alt="Error">
+                        <h2>Courses:15</h2>
+                    </div>
+                    <div>
+                        <img src="../images/admin_order.png" alt="Error">
+                        <h2>Teacher:25</h2>
+                    </div>
+                    <div>
+                        <img src="../images/admin_inventory.png" alt="Error">
+                        <h2 id="AV-productTotal">Student:55</h2>
+                    </div>
+                </div>
+                <div class="AV-contents">
+                    <div id="AV-addproduct">
+                        <h3>ADD PRODUCT</h3>
+                        <input type="text" placeholder="Name" id="AV-name">
+                        <input type="text" placeholder="Image link" id="AV-image">
+                        <input type="text" placeholder="Price" id="AV-price">
+                        <input type="text" placeholder="Category" id="AV-category">
+                        <input type="text" placeholder="Description" id="AV-desc">
+                        <button id="AV-submit">ADD</button>
+                    </div>
+                    <div>
+                        <div id="AV-productdata">
+                            <select name="" id="AV-categorys">
+
+                                <option value="">Select Category</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="matress">Mattress</option>
+                            </select>
+
+                            <!-- products added here -->
+
+                        </div>
+                    </div>
+                    <div id="userAV">
+                        <!-- users appends here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="AV-login">
+    <label for="">Your Name</label>
+    <input type="text" placeholder="E-mail" id="AV-formemail">
+    <label for="">Your Email</label>
+    <input type="text" placeholder="Enter password" id="AV-formpassword">
+    <input type="text" placeholder=" Re Enter password" id="AV-formpassword2">
+    <button>LOG IN</button>   -->
+        </div>
+    </section>
+</body>
+<script src="/script/adminpage.js"></script>
+
+</html>
