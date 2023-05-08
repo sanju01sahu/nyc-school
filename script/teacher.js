@@ -39,8 +39,8 @@
      title.textContent = element.title;
 
      teacher.append(image, name, title);
-    innercont.append(teacher)
-    container.append(innercont);
+    // innercont.append(teacher)
+    container.append(teacher);
 
      teacher.addEventListener("click", () => {
        localStorage.setItem("teachers", JSON.stringify(element));

@@ -225,7 +225,7 @@
 }
   
   
-  #teacher-cont >div{
+  #teacher-cont {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -238,7 +238,7 @@
   }
 
 
-  #teacher-cont > div>div {
+  #teacher-cont > div{
     background-color: #e9f4f8;
     text-align: center;
     margin: 20px;
@@ -253,7 +253,7 @@
 
 
   @media only screen and (max-width: 500px){
-#teacher-cont>div{
+#teacher-cont{
   grid-template-columns: repeat(1, 250px);
 }
 #middlesec>div:nth-child(2){
@@ -263,7 +263,7 @@
   }
 
   @media only screen and (min-width:500px) and (max-width: 800px){
-    #teacher-cont>div{
+    #teacher-cont{
       grid-template-columns: repeat(2, 250px);
     }
     #middlesec>div:nth-child(2)>p{
@@ -272,13 +272,13 @@
       }
 
       @media only screen and (min-width:800px) and (max-width: 1000px){
-        #teacher-cont>div{
+        #teacher-cont{
           grid-template-columns: repeat(3, 250px);
         }
           }
 
 
-  #teacher-cont > div >div> img {
+  #teacher-cont > div >img {
     display: flex;
     justify-content: center;
     width: 100%;
